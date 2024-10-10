@@ -21,7 +21,7 @@ export default function Navbar() {
       >
         {isOpen ? '✖️' : '☰'}
       </button>
-      <ul className={`flex-col sm:flex sm:flex-row sm:space-x-6  !sm:hidden sm:items-center`}>
+      <ul className={`flex-col sm:flex sm:flex-row sm:space-x-6  sm:block hidden sm:items-center`}>
                     <li className=" text-black-500 hover:text-zinc-500"> <button>
                 <Link href="/">HOME</Link>
             </button></li>
@@ -42,7 +42,7 @@ export default function Navbar() {
                 
                  {/* For small screens, show the navbar items below the logo */}
       {isOpen && (
-        <div className="flex flex-col mt-2 sm:hidden">
+        <div className="flex  mt-2 sm:hidden">
           <ul className="flex flex-col space-y-2">
             <li className="text-black-500 hover:text-zinc-500">
               <Link href="/" >
